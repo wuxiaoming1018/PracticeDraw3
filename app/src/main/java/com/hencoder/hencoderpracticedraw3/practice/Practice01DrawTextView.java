@@ -32,6 +32,7 @@ public class Practice01DrawTextView extends View {
         super.onDraw(canvas);
 
         // 使用 drawText() 来绘制文字
-        // 文字坐标： (50, 100)
+        // 文字坐标： (50, 100) 坐标为靠近左下角的坐标，并非是左上角坐标,y指的是文字基线的位置
+        canvas.drawText(text,50,100,paint);
     }
 }

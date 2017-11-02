@@ -32,7 +32,7 @@ public class Practice06SetStrikeThruTextView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-
+        paint.setStrikeThruText(true);//设置删除线
         canvas.drawText(text, 50, 100, paint);
     }
 }
